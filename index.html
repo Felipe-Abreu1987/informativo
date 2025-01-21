@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informativo sobre Saúde e Segurança no Trabalho (SST) e eSocial</title>
+  <style>
+    /* ----- ESTILOS BÁSICOS ----- */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+/* ----- CABEÇALHO COM LOGO CENTRALIZADO ----- */
+header {
+  background-color: #004d00; /* Verde-escuro */
+  color: #fff;
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+  padding: 20px; /* Espaçamento interno */
+  height: 200px; /* Altura fixa do cabeçalho */
+  display: block; /* Garante que o Flexbox não interfira */
+}
+header img {
+  height: 230px; /* Tamanho do logotipo */
+  display: inline-block; /* Certifica que o logotipo se alinha ao centro */
+}
+
+/* ----- RODAPÉ ----- */
+footer {
+  background-color: #004d00;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Deixe todo o texto em preto e em negrito */
+footer p {
+  color: #000;
+  font-weight: bold;
+}
+
+    /* ----- CONTAINER PRINCIPAL E ÁREA DE MARCA D'ÁGUA ----- */
+    main.watermark {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: relative; /* necessário para o pseudo-elemento */
+      z-index: 0;         /* para garantir que o texto fique acima do ::before */
+      background-color: #fff;
+    }
+
+    /* Marca d’água com pseudo-elemento ::before */
+    main.watermark::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* fica atrás do conteúdo principal */
+      /* Aumentar e reforçar a cor (opacidade) */
+      opacity: 0.1; 
+      background: url("C:/Users/Felipe/Desktop/Informativo/logo sem fundo digital.png")
+                  no-repeat center center;
+      background-size: 80%; /* Ajuste conforme desejar (maior que 60%) */
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+    h1, h2, h3, h4 {
+      color: #004d00;
+      margin-bottom: 10px;
+    }
+    p, li {
+      color: #333;
+    }
+    ul, ol {
+      margin: 10px 0 10px 40px;
+    }
+
+    /* PREVENIR em vermelho */
+    .prevenir-red {
+      color: #b30000; /* vermelho-escuro */
+    }
+
+    /* ----- ÁREA DO GRÁFICO PDCA ----- */
+    .pdca-container {
+      margin: 30px 0;
+      text-align: center;
+    }
+    .pdca-container h3 {
+      margin-bottom: 10px;
+    }
+
+    /* Responsividade básica para SVG */
+    @media (max-width: 600px) {
+      svg {
+        width: 300px !important;
+        height: 300px !important;
+      }
+      text, tspan {
+        font-size: 0.75rem !important;
+      }
+    }
+
+    /* ----- ESTILOS DOS ÍCONES ----- */
+    .contact-icons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px; /* espaçamento horizontal entre os ícones e textos */
+      flex-wrap: wrap; /* caso precise quebrar linha em telas pequenas */
+      margin-top: 15px;
+    }
+    .contact-icons a, .contact-icons span {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 5px; /* espaço entre ícone e texto */
+    }
+    .contact-icons img {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* ÍCONE GRANDE FIXO DO WHATSAPP NO CANTO INFERIOR DIREITO */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px; 
+      height: 60px;
+      z-index: 999; /* acima de outros elementos */
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <!-- LOGO no topo (caminho local) -->
+    <img src="C:\Users\Felipe\Desktop\Informativo\logo sem fundo digital.png" 
+         alt="Logotipo da Clínica" />
+    <h1>Informativo sobre Saúde e Segurança no Trabalho (SST) e eSocial</h1>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL COM MARCA D'ÁGUA -->
+  <main class="watermark">
+
+<!-- TEXTO ATUALIZADO (todas as ocorrências de PREVENIR em vermelho) -->
+<section>
+    <!-- Inserção do título adicional centralizado -->
+    <p style="text-align: center;">
+      <strong>INFORMATIVO SOBRE ATUALIZAÇÃO DA NORMA REGULAMENTADORA Nº1</strong>
+    </p>
+    <p>
+      Inserção do fator de risco psicossocial no PGR <strong>(introduzidos pela Portaria MTP nº 1.419/2024 e obrigatórios a partir de 24 de maio de 2025)</strong>
+    </p>
+
+    <!-- Conteúdo existente -->
+    <p><strong>Prezados(as),</strong></p>
+    <p>
+      No Brasil, as <span class="prevenir-red">Normas Regulamentadoras (NRs)</span>, que orientam as obrigações em 
+      Saúde e Segurança do Trabalho (SST), são frequentemente atualizadas, trazendo implicações relevantes 
+      para as empresas. Além disso, o <span class="prevenir-red">eSocial</span>, plataforma do Governo Federal, 
+      tem como objetivo centralizar as informações fiscais, previdenciárias e trabalhistas, incluindo 
+      aquelas relacionadas à SST.
+    </p>
+  </section>
+
+    <section>
+      <h2>Exigências do eSocial em SST</h2>
+      <p>Atualmente, o <span class="prevenir-red">eSocial</span> exige o envio dos seguintes eventos obrigatórios:</p>
+      <ul>
+        <li><strong>S-2210 – Comunicação de Acidente de Trabalho (CAT)</strong>: deve ser enviado até o primeiro dia útil seguinte à ocorrência ou imediatamente em caso de óbito.</li>
+        <li><strong>S-2220 – Monitoramento da Saúde do Trabalhador (ASO)</strong>: deve ser enviado até o dia 15 do mês subsequente à realização do exame ocupacional.</li>
+        <li><strong>S-2240 – Condições Ambientais do Trabalho (LTCAT)</strong>: deve ser enviado até o dia 15 do mês subsequente à admissão ou alteração nas condições de risco.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Por que o Governo exige informações do LTCAT?</h2>
+      <p>
+        O objetivo principal é fiscalizar se as empresas estão cumprindo suas obrigações previdenciárias, 
+        especialmente o recolhimento do SAT Suplementar. Esse recolhimento financia a aposentadoria especial 
+        para trabalhadores expostos a agentes nocivos, conforme previsto no Anexo IV do Decreto 3.048/1999, 
+        regulamento da Previdência Social.
+      </p>
+      <p>Com isso, o Governo busca:</p>
+      <ol>
+        <li>Identificar possíveis omissões nas contribuições previdenciárias, promovendo maior arrecadação;</li>
+        <li>Desonerar a Previdência Social, ao reduzir gastos com benefícios indevidos.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>O que muda com o PGR?</h2>
+      <p>
+        O <strong>PGR (Programa de Gerenciamento de Riscos)</strong>, instituído pela NR-1, substituiu o antigo PPRA e 
+        ampliou a gestão dos riscos ocupacionais. Enquanto o PPRA abordava riscos Físicos, Químicos e Biológicos, 
+        o PGR incluiu também:
+      </p>
+      <ul>
+        <li>Riscos Ergonômicos</li>
+        <li>Riscos de Acidentes</li>
+        <li>Riscos Psicossociais <strong>(introduzidos pela Portaria MTP nº 1.419/2024 e obrigatórios a partir de 24 de maio de 2025)</strong>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>O que são riscos psicossociais?</h2>
+      <p>Esses riscos envolvem fatores que podem impactar a saúde mental do trabalhador, como:</p>
+      <ul>
+        <li>Excesso de pressão ou cobrança no ambiente laboral;</li>
+        <li>Jornadas de trabalho exaustivas;</li>
+        <li>Abuso de autoridade ou assédio.</li>
+      </ul>
+      <p>
+        Esses fatores frequentemente levam a transtornos como ansiedade, depressão e síndrome de burnout, que 
+        estão entre as principais causas de afastamentos registrados pela Previdência Social. Até o momento, muitos 
+        desses afastamentos são considerados como “doenças próprias”. Entretanto, com a inclusão dos riscos 
+        psicossociais no PGR, há uma tendência de que esses afastamentos sejam caracterizados como doenças 
+        relacionadas ao trabalho, aumentando as contribuições previdenciárias das empresas envolvidas.
+      </p>
+    </section>
+
+    <section>
+      <h2>O futuro no eSocial</h2>
+      <p>
+        Embora o envio do PGR ao <span class="prevenir-red">eSocial</span> ainda não seja obrigatório, o Governo já trabalha para incluir a gestão 
+        dos cinco grupos de riscos ocupacionais (Físicos, Químicos, Biológicos, Ergonômicos e Psicossociais) na 
+        plataforma. Quando isso ocorrer, o Governo poderá cruzar dados de afastamentos (baseados em CID’s das 
+        categorias "M", "S" e "F") com os riscos informados no PGR, promovendo uma fiscalização ainda mais rigorosa.
+      </p>
+      <h3>Por que isso importa para sua empresa?</h3>
+      <p>
+        A conformidade com as exigências de SST e <span class="prevenir-red">eSocial</span> é essencial para evitar multas, embargos e outras 
+        sanções administrativas. Além disso, a correta gestão dessas informações contribui para minimizar custos 
+        com encargos adicionais e promover a segurança e o bem-estar dos trabalhadores.
+      </p>
+    </section>
+
+    <section>
+      <h2>A <span class="prevenir-red">PREVENIR</span> e os riscos psicossociais</h2>
+      <p>
+        A <span class="prevenir-red">PREVENIR</span>, atenta às mudanças e exigências atuais, desenvolveu uma metodologia própria 
+        para abordar os riscos psicossociais. Abaixo, apresentamos de forma resumida as etapas mais importantes:
+      </p>
+
+      <h3>Planejamento</h3>
+      <ol>
+        <li><strong>Montagem de equipe multidisciplinar</strong><br>
+            (Médico do Trabalho, RH, Equipe Técnica).</li>
+        <li><strong>Definição do formato de abordagem</strong><br>
+            Essa etapa é crucial para o sucesso do levantamento e aplicação da metodologia, pois garante clareza 
+            sobre objetivos e processos a serem adotados.</li>
+      </ol>
+
+      <h3>Identificação dos Fatores Psicossociais</h3>
+      <ul>
+        <li>Coleta de dados via entrevistas, pesquisas e análise de registros relacionados ao controle de absenteísmo.</li>
+      </ul>
+
+      <h3>Avaliação dos Riscos</h3>
+      <ul>
+        <li>Classificação de riscos por probabilidade, impacto e número de trabalhadores expostos.</li>
+        <li>Uso de matrizes de risco para definir prioridades.</li>
+      </ul>
+
+      <h3>Medidas Preventivas e Corretivas</h3>
+      <ul>
+        <li>Ações como treinamentos, políticas de equilíbrio trabalho-vida e canais de denúncia.</li>
+      </ul>
+
+      <h3>Documentação e Inclusão no PGR</h3>
+      <ul>
+        <li>Relatório com métodos utilizados, resultados, plano de ação e cronograma.</li>
+        <li>Registro dos riscos psicossociais no PGR.</li>
+      </ul>
+
+      <h3>Monitoramento e Reavaliação</h3>
+      <ul>
+        <li>Auditorias periódicas e atualização contínua do PGR conforme mudanças no ambiente de trabalho.</li>
+      </ul>
+    </section>
+
+    <section>
+      <p>Abaixo ilustramos o processo com um gráfico de como ocorrerá o trabalho:</p>
+    </section>
+
+    <!-- NOVO TÍTULO E REMOÇÃO DO TEXTO ABAIXO DO GRÁFICO -->
+    <section class="pdca-container">
+      <h2>Ações da <span class="prevenir-red">PREVENIR</span> através do ciclo PDCA (Plan, Do, Check, Action)</h2>
+
+      <!-- SVG MELHORADO: quadrantes com stroke branco e texto alinhado -->
+      <svg width="400" height="400" viewBox="0 0 400 400">
+        <!-- Circulo de borda branca (opcional, para destaque) -->
+        <circle cx="200" cy="200" r="200" fill="none" stroke="#fff" stroke-width="2"></circle>
+
+        <!-- Plan Quadrant (top-left, verde) -->
+        <path d="M200,200 L200,0 A200,200 0 0,0 0,200 Z" fill="#004d00" stroke="#fff" stroke-width="1"></path>
+        <!-- Do Quadrant (top-right, vermelho) -->
+        <path d="M200,200 L400,200 A200,200 0 0,0 200,0 Z" fill="#b30000" stroke="#fff" stroke-width="1"></path>
+        <!-- Check Quadrant (bottom-right, verde) -->
+        <path d="M200,200 L200,400 A200,200 0 0,0 400,200 Z" fill="#004d00" stroke="#fff" stroke-width="1"></path>
+        <!-- Act Quadrant (bottom-left, vermelho) -->
+        <path d="M200,200 L0,200 A200,200 0 0,0 200,400 Z" fill="#b30000" stroke="#fff" stroke-width="1"></path>
+
+        <!-- Texto: PLAN Quadrant -->
+        <text x="100" y="80" fill="#fff" font-size="0.9rem" font-weight="bold" text-anchor="middle">
+          PLAN
+          <tspan x="100" dy="1.4em" font-size="0.8rem" font-weight="normal">• Riscos Psicossociais</tspan>
+          <tspan x="100" dy="1.2em" font-size="0.8rem" font-weight="normal">• Mapeamento</tspan>
+          <tspan x="100" dy="1.2em" font-size="0.8rem" font-weight="normal">• Ferramentas</tspan>
+          <tspan x="100" dy="1.2em" font-size="0.8rem" font-weight="normal">• Engajamento</tspan>
+          <tspan x="100" dy="1.2em" font-size="0.8rem" font-weight="normal">• Equipe</tspan>
+        </text>
+
+        <!-- Texto: DO Quadrant -->
+        <text x="300" y="80" fill="#fff" font-size="0.9rem" font-weight="bold" text-anchor="middle">
+          DO
+          <tspan x="300" dy="1.4em" font-size="0.8rem" font-weight="normal">• Aplicação</tspan>
+          <tspan x="300" dy="1.2em" font-size="0.8rem" font-weight="normal">• Questionários</tspan>
+          <tspan x="300" dy="1.2em" font-size="0.8rem" font-weight="normal">• Entrevistas</tspan>
+          <tspan x="300" dy="1.2em" font-size="0.8rem" font-weight="normal">• Observações</tspan>
+          <tspan x="300" dy="1.2em" font-size="0.8rem" font-weight="normal">• Registro</tspan>
+        </text>
+
+        <!-- Texto: CHECK Quadrant -->
+        <text x="300" y="240" fill="#fff" font-size="0.9rem" font-weight="bold" text-anchor="middle">
+          CHECK
+          <tspan x="300" dy="1.4em" font-size="0.8rem" font-weight="normal">• Classificação</tspan>
+          <tspan x="300" dy="1.2em" font-size="0.8rem" font-weight="normal">• Análise de Impacto</tspan>
+          <tspan x="300" dy="1.2em" font-size="0.8rem" font-weight="normal">• Validação</tspan>
+          <tspan x="300" dy="1.2em" font-size="0.8rem" font-weight="normal">• Eficiência</tspan>
+          <tspan x="300" dy="1.2em" font-size="0.8rem" font-weight="normal">• Feedback</tspan>
+        </text>
+
+        <!-- Texto: ACT Quadrant -->
+        <text x="100" y="240" fill="#fff" font-size="0.9rem" font-weight="bold" text-anchor="middle">
+          ACTION
+          <tspan x="100" dy="1.4em" font-size="0.8rem" font-weight="normal">• Plano de Ação</tspan>
+          <tspan x="100" dy="1.2em" font-size="0.8rem" font-weight="normal">• Medidas Preventivas</tspan>
+          <tspan x="100" dy="1.2em" font-size="0.8rem" font-weight="normal">• Atualização do PGR</tspan>
+          <tspan x="100" dy="1.2em" font-size="0.8rem" font-weight="normal">• Acompanhamento</tspan>
+          <tspan x="100" dy="1.2em" font-size="0.8rem" font-weight="normal">• Melhorias</tspan>
+        </text>
+      </svg>
+    </section>
+
+    <section>
+        <p style="font-size: 1.5rem; color: #004d00; font-weight: bold;">
+            Precisa atualizar ou adequar o seu PGR?
+          </p>
+      <p>Entre em contato conosco, através dos nossos canais de atendimento:</p>
+
+      <!-- ÍCONES DE CONTATO -->
+      <div class="contact-icons">
+        <!-- ÍCONE E-MAIL -->
+        <span>
+          <!-- Ajuste o caminho do ícone abaixo conforme necessário -->
+          <img src="C:\Users\Felipe\Desktop\Informativo\e-mail.png" alt="Ícone de E-mail" />
+          E-mail: seguranca2@prevenirss.com.br | diretoria.fa@prevenirss.com.br
+        </span>
+      </div>
+      <div class="contact-icons">
+        <!-- ÍCONE TELEFONE -->
+        <span>
+          <!-- Ajuste o caminho do ícone abaixo conforme necessário -->
+          <img src="C:\Users\Felipe\Desktop\Informativo\telefone.png" alt="Ícone de Telefone" />
+          Telefone: (15) 3217-9497 | (15) 2104-0475
+        </span>
+      </div>
+      <div class="contact-icons">
+        <!-- ÍCONE WHATSAPP (LINK) -->
+        <a href="https://web.whatsapp.com/send?phone=5515996147039" target="_blank">
+          <!-- Ajuste o caminho do ícone abaixo conforme necessário -->
+          <img src="C:\Users\Felipe\Desktop\Informativo\whtasapp.png" alt="Ícone do WhatsApp" />
+          WhatsApp: (15) 99614-7039
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ÍCONE GRANDE DE WHATSAPP NO CANTO INFERIOR DIREITO -->
+  <a href="https://web.whatsapp.com/send?phone=5515996147039" target="_blank">
+    <!-- Ajuste o caminho do ícone abaixo conforme necessário -->
+    <img src="C:\Users\Felipe\Desktop\Informativo\whtasapp.png" alt="WhatsApp Grande" class="floating-whatsapp">
+  </a>
+
+  <!-- RODAPÉ (SEM LOGO) -->
+  <footer>
+    <p>© 2025 Clínica <span class="prevenir-red">PREVENIR</span> - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
